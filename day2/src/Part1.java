@@ -23,7 +23,6 @@ public class Part1 {
                 validGames.add(parsedGame.get("gameId"));
             }
         }
-        System.out.println("Valid Games: " + validGames);
         return validGames;
     }
 
@@ -39,7 +38,6 @@ public class Part1 {
             put("green", greens);
             put("blue", blues);
         }};
-        System.out.println("Game: " + gameId + ", Reds " + reds + ", Greens " + greens + ", Blues " + blues);
         return game;
     }
 
@@ -76,7 +74,7 @@ public class Part1 {
     private boolean isMeetCondition(Map<String, Integer> game) {
         int countRedCubes = 12;
         int countGreenCubes = 13;
-        int countBlueCubes = 15;
+        int countBlueCubes = 14;
 
         return game.get("red") <= countRedCubes && game.get("green") <= countGreenCubes && game.get("blue") <= countBlueCubes;
     }

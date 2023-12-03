@@ -9,7 +9,8 @@ public class Main {
             FileReader fileReader = new FileReader("day2/src/input.txt");
             BufferedReader br = new BufferedReader(fileReader);
 
-            new Part1(br);
+            //new Part1(br);
+            new Part2(br);
 
         } catch(IOException e) {
             e.printStackTrace();
